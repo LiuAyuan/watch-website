@@ -1,0 +1,132 @@
+@white:#fff;
+@border1:#1aa0e1;
+@color1:#444444;
+@color2:#777777;
+@color3:#f7f7f7;
+@color4:#919191;
+@color5:#25242c;
+@color6:#323232;
+
+
+
+li{list-style: none;}
+a:hover{text-decoration: none;}
+.left{float:left;}
+.right{float: right;}
+img{max-width: 100%;}
+.img-width{width: 100%;}
+
+body {
+    font-family:"Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 14px;
+    background: @white;
+}
+
+/* nav */
+.header-nav{
+    padding: 20px 0;
+    border-bottom: 2px solid @border1;
+
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index:99;
+    .img-logo{
+        display: inline-block ;
+        width: 25%;
+        padding-top: 10px;
+    }
+    .nav{
+        li{
+            a{
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+.navbar-default .nav li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+   font-size: 20px;
+   padding: 15px 10px;
+
+}
+
+
+
+
+/* footer */
+.footer-black{
+    clear: both;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 14px;
+    background:@color5;
+    color: @color4;
+}
+
+
+#footer{
+    background:@color3 ;
+    font-size: 14px;
+    margin-top: 78px;
+}
+#footer a{
+    display: block;
+    color:@color4;
+    padding: 5px;
+    text-decoration: none;
+}
+#footer a.footer-title{
+    color: @color6;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    cursor: default;
+}
+#footer .footer-link{
+    color:@color4 ;
+    margin-top: 20px;
+    .company-link{
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:990px) {
+    #footer .footer-link{
+        img{
+            width: 50%;
+            margin: auto;
+        }
+    margin-top: 20px;
+    .company-link{
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+}
+
+#footer .footer-link li{
+    padding-bottom: 5px;
+    margin-left: -5px;
+}
+.footer-black{
+    width:100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 14px;
+    background:@color5;
+    color: @color4;
+}
+
+
+.clock-show .left{ width: 30%;}
+.clock-show img{width: 50%;}
